@@ -4,6 +4,7 @@ import { FileText, Upload, X } from 'lucide-react'
 import { cn } from './cn.ts'
 import Button from './button.tsx'
 import Field from './field.tsx'
+import formatBytes from './format-bytes.ts'
 import IconButton from './icon-button.tsx'
 import Progress from './progress.tsx'
 import useControllableState from './use-controllable-state.ts'
@@ -26,12 +27,6 @@ export type FileUploadProps = {
   onFilesChange?: (files: File[]) => void
   getProgress?: (file: File) => number | undefined
   className?: string
-}
-
-function formatBytes(bytes: number) {
-  if (bytes < 1024) return `${bytes} B`
-  if (bytes < 1024 ** 2) return `${(bytes / 1024).toFixed(1)} KB`
-  return `${(bytes / 1024 ** 2).toFixed(1)} MB`
 }
 
 function matchesAccept(file: File, accept?: string) {

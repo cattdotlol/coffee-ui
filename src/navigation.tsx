@@ -1,4 +1,4 @@
-import { House, MousePointer2, Star, ToggleLeft, TextCursorInput, SquareCheck, CircleDot, ListFilter, AlignLeft, PanelTop, MessageSquare, PanelsTopLeft, Tag, Minus, Menu, SlidersHorizontal, TriangleAlert, Bell, ChevronsUpDown, CircleAlert, CircleUserRound, RectangleHorizontal, Keyboard, Ellipsis, Gauge, Columns3, ScanLine, SlidersVertical, LoaderCircle, TextSearch, PanelRight, Table, ChevronRight, Hash, Bold, Inbox, Command, CalendarDays, Tags, Upload, RectangleEllipsis, Copy, Link2, ChevronDown, List, IdCard, MousePointerClick, ListOrdered, PanelLeft, GalleryHorizontal, GripVertical, Group, CalendarRange, Clock, Network, History, Palette, ScrollText, Ratio, KeyRound, Search, ListPlus, PencilLine, Rows3, Wrench, Megaphone, Bookmark, Users, Code, Paintbrush, LayoutDashboard, UserCog, Mail, ChartLine, ChartColumn, ChartPie, ChartBar, Activity, TrendingUp, ShoppingCart, SquareKanban, LogIn, BadgeDollarSign, QrCode as QrCodeIcon, CreditCard as CreditCardIcon, WalletCards } from 'lucide-react'
+import { AppWindow, ChartArea, ChartScatter, Grid3x3, Radar, Bot, CircleDashed, Lightbulb, MessageSquareText, Paperclip, SquareSplitHorizontal, Brain, BookOpenText, Hammer, House, MessagesSquare, Sparkles, SquareTerminal, ThumbsUp, MousePointer2, Star, ToggleLeft, TextCursorInput, SquareCheck, CircleDot, ListFilter, AlignLeft, PanelTop, MessageSquare, PanelsTopLeft, Tag, Minus, Menu, SlidersHorizontal, TriangleAlert, Bell, ChevronsUpDown, CircleAlert, CircleUserRound, RectangleHorizontal, Keyboard, Ellipsis, Gauge, Columns3, ScanLine, SlidersVertical, LoaderCircle, TextSearch, PanelRight, Table, ChevronRight, Hash, Bold, Inbox, Command, CalendarDays, Tags, Upload, RectangleEllipsis, Copy, Link2, ChevronDown, List, IdCard, MousePointerClick, ListOrdered, PanelLeft, GalleryHorizontal, GripVertical, Group, CalendarRange, Clock, Network, History, Palette, ScrollText, Ratio, KeyRound, Search, ListPlus, PencilLine, Rows3, Wrench, Megaphone, Bookmark, Users, Code, Paintbrush, LayoutDashboard, UserCog, Mail, ChartLine, ChartColumn, ChartPie, ChartBar, Activity, TrendingUp, ShoppingCart, SquareKanban, LogIn, BadgeDollarSign, QrCode as QrCodeIcon, CreditCard as CreditCardIcon, WalletCards } from 'lucide-react'
 
 const icon = (Icon: typeof House) => <Icon strokeWidth={1.5} />
 
@@ -15,14 +15,28 @@ export const groups = [
     { href: '/examples/board', label: 'Project board', icon: icon(SquareKanban) },
     { href: '/examples/auth', label: 'Authentication', icon: icon(LogIn) },
     { href: '/examples/pricing', label: 'Pricing', icon: icon(BadgeDollarSign) },
+    { href: '/examples/ai-chat', label: 'AI chat', icon: icon(Bot) },
+  ] },
+  { label: 'AI', items: [
+    { href: '/prompt-input', label: 'PromptInput', icon: icon(SquareTerminal) },
+    { href: '/typing-indicator', label: 'TypingIndicator', icon: icon(Sparkles) },
+    { href: '/message-actions', label: 'MessageActions', icon: icon(ThumbsUp) },
+    { href: '/reasoning', label: 'Reasoning', icon: icon(Brain) },
+    { href: '/tool-call', label: 'ToolCall', icon: icon(Hammer) },
+    { href: '/sources', label: 'Sources', icon: icon(BookOpenText) },
+    { href: '/suggestions', label: 'Suggestions', icon: icon(Lightbulb) },
+    { href: '/attachment-list', label: 'AttachmentList', icon: icon(Paperclip) },
+    { href: '/conversation-list', label: 'ConversationList', icon: icon(MessageSquareText) },
   ] },
   { label: 'Actions', items: [
     { href: '/button', label: 'Button', icon: icon(MousePointer2) },
     { href: '/icon-button', label: 'IconButton', icon: icon(Star) },
     { href: '/button-group', label: 'ButtonGroup', icon: icon(Group) },
+    { href: '/split-button', label: 'SplitButton', icon: icon(SquareSplitHorizontal) },
     { href: '/copy-button', label: 'CopyButton', icon: icon(Copy) },
     { href: '/toggle', label: 'Toggle', icon: icon(Bold) },
     { href: '/dropdown-menu', label: 'DropdownMenu', icon: icon(Menu) },
+    { href: '/menubar', label: 'Menubar', icon: icon(AppWindow) },
     { href: '/context-menu', label: 'ContextMenu', icon: icon(MousePointerClick) },
     { href: '/command-palette', label: 'CommandPalette', icon: icon(Command) },
     { href: '/toolbar', label: 'Toolbar', icon: icon(Wrench) },
@@ -67,6 +81,7 @@ export const groups = [
     { href: '/banner', label: 'Banner', icon: icon(Megaphone) },
     { href: '/toast', label: 'Toast', icon: icon(Bell) },
     { href: '/progress', label: 'Progress', icon: icon(Gauge) },
+    { href: '/circular-progress', label: 'CircularProgress', icon: icon(CircleDashed) },
     { href: '/spinner', label: 'Spinner', icon: icon(LoaderCircle) },
     { href: '/skeleton', label: 'Skeleton', icon: icon(ScanLine) },
     { href: '/empty-state', label: 'EmptyState', icon: icon(Inbox) },
@@ -83,7 +98,11 @@ export const groups = [
   { label: 'Charts', items: [
     { href: '/line-chart', label: 'LineChart', icon: icon(ChartLine) },
     { href: '/bar-chart', label: 'BarChart', icon: icon(ChartColumn) },
+    { href: '/area-chart', label: 'AreaChart', icon: icon(ChartArea) },
+    { href: '/scatter-chart', label: 'ScatterChart', icon: icon(ChartScatter) },
     { href: '/donut-chart', label: 'DonutChart', icon: icon(ChartPie) },
+    { href: '/radar-chart', label: 'RadarChart', icon: icon(Radar) },
+    { href: '/heatmap', label: 'Heatmap', icon: icon(Grid3x3) },
     { href: '/bar-list', label: 'BarList', icon: icon(ChartBar) },
     { href: '/sparkline', label: 'Sparkline', icon: icon(Activity) },
     { href: '/stat', label: 'Stat', icon: icon(TrendingUp) },
@@ -101,6 +120,7 @@ export const groups = [
     { href: '/description-list', label: 'DescriptionList', icon: icon(List) },
     { href: '/tree-view', label: 'TreeView', icon: icon(Network) },
     { href: '/timeline', label: 'Timeline', icon: icon(History) },
+    { href: '/message-list', label: 'MessageList', icon: icon(MessagesSquare) },
     { href: '/carousel', label: 'Carousel', icon: icon(GalleryHorizontal) },
     { href: '/avatar', label: 'Avatar', icon: icon(CircleUserRound) },
     { href: '/avatar-group', label: 'AvatarGroup', icon: icon(Users) },

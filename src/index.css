@@ -42,6 +42,18 @@
     from { background-position: 150% 0; }
     to { background-position: -50% 0; }
   }
+
+  --animate-typing: typing 1.2s ease-in-out infinite;
+  --animate-caret: caret 1s steps(1) infinite;
+
+  @keyframes typing {
+    0%, 60%, 100% { opacity: 0.35; transform: translateY(0); }
+    30% { opacity: 1; transform: translateY(-3px); }
+  }
+
+  @keyframes caret {
+    50% { opacity: 0; }
+  }
 }
 
 @layer base {

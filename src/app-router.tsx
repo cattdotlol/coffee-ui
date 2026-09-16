@@ -12,6 +12,7 @@ import CheckoutPage from './examples/checkout-page.tsx'
 import BoardPage from './examples/board-page.tsx'
 import AuthPage from './examples/auth-page.tsx'
 import PricingPage from './examples/pricing-page.tsx'
+import AiChatPage from './examples/ai-chat-page.tsx'
 import QrCodePage from './pages/qr-code-page.tsx'
 import CreditCardPage from './pages/credit-card-page.tsx'
 import CreditCardFieldPage from './pages/credit-card-field-page.tsx'
@@ -88,6 +89,23 @@ import RangeSliderPage from './pages/range-slider-page.tsx'
 import InlineEditPage from './pages/inline-edit-page.tsx'
 import FieldsetPage from './pages/fieldset-page.tsx'
 import ToolbarPage from './pages/toolbar-page.tsx'
+import MenubarPage from './pages/menubar-page.tsx'
+import MessageListPage from './pages/message-list-page.tsx'
+import PromptInputPage from './pages/prompt-input-page.tsx'
+import TypingIndicatorPage from './pages/typing-indicator-page.tsx'
+import MessageActionsPage from './pages/message-actions-page.tsx'
+import ReasoningPage from './pages/reasoning-page.tsx'
+import ToolCallPage from './pages/tool-call-page.tsx'
+import SourcesPage from './pages/sources-page.tsx'
+import AreaChartPage from './pages/area-chart-page.tsx'
+import ScatterChartPage from './pages/scatter-chart-page.tsx'
+import RadarChartPage from './pages/radar-chart-page.tsx'
+import HeatmapPage from './pages/heatmap-page.tsx'
+import SplitButtonPage from './pages/split-button-page.tsx'
+import CircularProgressPage from './pages/circular-progress-page.tsx'
+import SuggestionsPage from './pages/suggestions-page.tsx'
+import AttachmentListPage from './pages/attachment-list-page.tsx'
+import ConversationListPage from './pages/conversation-list-page.tsx'
 import BannerPage from './pages/banner-page.tsx'
 import TagPage from './pages/tag-page.tsx'
 import AvatarGroupPage from './pages/avatar-group-page.tsx'
@@ -178,6 +196,24 @@ const tagInputRoute = createRoute({ getParentRoute: () => rootRoute, path: '/tag
 const rangeSliderRoute = createRoute({ getParentRoute: () => rootRoute, path: '/range-slider', component: RangeSliderPage })
 const inlineEditRoute = createRoute({ getParentRoute: () => rootRoute, path: '/inline-edit', component: InlineEditPage })
 const fieldsetRoute = createRoute({ getParentRoute: () => rootRoute, path: '/fieldset', component: FieldsetPage })
+const aiChatRoute = createRoute({ getParentRoute: () => rootRoute, path: '/examples/ai-chat', component: AiChatPage })
+const promptInputRoute = createRoute({ getParentRoute: () => rootRoute, path: '/prompt-input', component: PromptInputPage })
+const typingIndicatorRoute = createRoute({ getParentRoute: () => rootRoute, path: '/typing-indicator', component: TypingIndicatorPage })
+const messageActionsRoute = createRoute({ getParentRoute: () => rootRoute, path: '/message-actions', component: MessageActionsPage })
+const reasoningRoute = createRoute({ getParentRoute: () => rootRoute, path: '/reasoning', component: ReasoningPage })
+const toolCallRoute = createRoute({ getParentRoute: () => rootRoute, path: '/tool-call', component: ToolCallPage })
+const sourcesRoute = createRoute({ getParentRoute: () => rootRoute, path: '/sources', component: SourcesPage })
+const splitButtonRoute = createRoute({ getParentRoute: () => rootRoute, path: '/split-button', component: SplitButtonPage })
+const circularProgressRoute = createRoute({ getParentRoute: () => rootRoute, path: '/circular-progress', component: CircularProgressPage })
+const suggestionsRoute = createRoute({ getParentRoute: () => rootRoute, path: '/suggestions', component: SuggestionsPage })
+const attachmentListRoute = createRoute({ getParentRoute: () => rootRoute, path: '/attachment-list', component: AttachmentListPage })
+const conversationListRoute = createRoute({ getParentRoute: () => rootRoute, path: '/conversation-list', component: ConversationListPage })
+const areaChartRoute = createRoute({ getParentRoute: () => rootRoute, path: '/area-chart', component: AreaChartPage })
+const scatterChartRoute = createRoute({ getParentRoute: () => rootRoute, path: '/scatter-chart', component: ScatterChartPage })
+const radarChartRoute = createRoute({ getParentRoute: () => rootRoute, path: '/radar-chart', component: RadarChartPage })
+const heatmapRoute = createRoute({ getParentRoute: () => rootRoute, path: '/heatmap', component: HeatmapPage })
+const messageListRoute = createRoute({ getParentRoute: () => rootRoute, path: '/message-list', component: MessageListPage })
+const menubarRoute = createRoute({ getParentRoute: () => rootRoute, path: '/menubar', component: MenubarPage })
 const toolbarRoute = createRoute({ getParentRoute: () => rootRoute, path: '/toolbar', component: ToolbarPage })
 const bannerRoute = createRoute({ getParentRoute: () => rootRoute, path: '/banner', component: BannerPage })
 const tagRoute = createRoute({ getParentRoute: () => rootRoute, path: '/tag', component: TagPage })
@@ -203,7 +239,7 @@ const barListRoute = createRoute({ getParentRoute: () => rootRoute, path: '/bar-
 const sparklineRoute = createRoute({ getParentRoute: () => rootRoute, path: '/sparkline', component: SparklinePage })
 const statRoute = createRoute({ getParentRoute: () => rootRoute, path: '/stat', component: StatPage })
 
-const routeTree = rootRoute.addChildren([indexRoute, lineChartRoute, barChartRoute, donutChartRoute, barListRoute, sparklineRoute, statRoute, themeStudioRoute, dashboardRoute, settingsRoute, inboxRoute, checkoutRoute, boardRoute, authRoute, pricingRoute, qrCodeRoute, creditCardRoute, creditCardFieldRoute, buttonRoute, iconButtonRoute, switchRoute, textFieldRoute, checkboxRoute, radioGroupRoute, selectRoute, textareaRoute, dialogRoute, tooltipRoute, tabsRoute, badgeRoute, separatorRoute, dropdownMenuRoute, popoverRoute, alertDialogRoute, toastRoute, accordionRoute, alertRoute, avatarRoute, cardRoute, kbdRoute, paginationRoute, progressRoute, segmentedControlRoute, skeletonRoute, sliderRoute, spinnerRoute, comboboxRoute, sheetRoute, tableRoute, breadcrumbRoute, numberFieldRoute, toggleRoute, emptyStateRoute, commandPaletteRoute, datePickerRoute, multiSelectRoute, fileUploadRoute, otpInputRoute, copyButtonRoute, linkRoute, collapsibleRoute, descriptionListRoute, hoverCardRoute, contextMenuRoute, stepperRoute, sidebarRoute, carouselRoute, resizableRoute, buttonGroupRoute, dateRangePickerRoute, timePickerRoute, treeViewRoute, timelineRoute, ratingRoute, colorPickerRoute, scrollAreaRoute, aspectRatioRoute, passwordFieldRoute, searchFieldRoute, tagInputRoute, rangeSliderRoute, inlineEditRoute, fieldsetRoute, toolbarRoute, bannerRoute, tagRoute, avatarGroupRoute, codeBlockRoute])
+const routeTree = rootRoute.addChildren([indexRoute, lineChartRoute, barChartRoute, donutChartRoute, barListRoute, sparklineRoute, statRoute, themeStudioRoute, dashboardRoute, settingsRoute, inboxRoute, checkoutRoute, boardRoute, authRoute, pricingRoute, qrCodeRoute, creditCardRoute, creditCardFieldRoute, buttonRoute, iconButtonRoute, switchRoute, textFieldRoute, checkboxRoute, radioGroupRoute, selectRoute, textareaRoute, dialogRoute, tooltipRoute, tabsRoute, badgeRoute, separatorRoute, dropdownMenuRoute, popoverRoute, alertDialogRoute, toastRoute, accordionRoute, alertRoute, avatarRoute, cardRoute, kbdRoute, paginationRoute, progressRoute, segmentedControlRoute, skeletonRoute, sliderRoute, spinnerRoute, comboboxRoute, sheetRoute, tableRoute, breadcrumbRoute, numberFieldRoute, toggleRoute, emptyStateRoute, commandPaletteRoute, datePickerRoute, multiSelectRoute, fileUploadRoute, otpInputRoute, copyButtonRoute, linkRoute, collapsibleRoute, descriptionListRoute, hoverCardRoute, contextMenuRoute, stepperRoute, sidebarRoute, carouselRoute, resizableRoute, buttonGroupRoute, dateRangePickerRoute, timePickerRoute, treeViewRoute, timelineRoute, ratingRoute, colorPickerRoute, scrollAreaRoute, aspectRatioRoute, passwordFieldRoute, searchFieldRoute, tagInputRoute, rangeSliderRoute, inlineEditRoute, fieldsetRoute, toolbarRoute, menubarRoute, messageListRoute, aiChatRoute, promptInputRoute, typingIndicatorRoute, messageActionsRoute, reasoningRoute, toolCallRoute, sourcesRoute, areaChartRoute, scatterChartRoute, radarChartRoute, heatmapRoute, splitButtonRoute, circularProgressRoute, suggestionsRoute, attachmentListRoute, conversationListRoute, bannerRoute, tagRoute, avatarGroupRoute, codeBlockRoute])
 
 const router = createRouter({
   routeTree,
