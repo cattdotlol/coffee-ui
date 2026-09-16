@@ -1,0 +1,1 @@
+- Always use kebab-case for filenames.
